@@ -1,0 +1,13 @@
+# .gitignore
+
+# Ignore Terraform state file
+*.tfstate
+
+# Ignore Terraform state backup files
+*.tfstate.backup
+
+# Ignore private key file
+*.pem
+
+# Ignore Terraform working directory
+.terraform/
