@@ -1,0 +1,24 @@
+classes:
+  - role::docker_roles
+
+nodes:
+  - debian-11-64
+
+
+class_group:
+
+
+# node_groups:
+#   windows_node:
+#   non_windows_nodes:
+#    include: 'all_nodes'
+#    exclude: 'windows_nodes'
+
+
+test_matrix:
+  - all_nodes:
+      classes: 'all_classes'
+      tests: 'spec'
+  - non_windows_nodes:
+      classes: 'all_claases'
+      tests: 'acceptance'    

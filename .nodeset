@@ -1,0 +1,9 @@
+HOSTS:
+    debian-11:
+    hypervisor: vagrant
+    box: bento/debian-11
+    synced_folder: disabled
+    platform: debian-11-amd64
+    roles:
+      - master
+CONFIG:    
